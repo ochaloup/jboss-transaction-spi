@@ -86,7 +86,7 @@ public interface ImportedTransaction extends Transaction
 	 * rolls back.
 	 */
     public void doOnePhaseCommit() throws IllegalStateException,
-			HeuristicMixedException, SystemException, RollbackException;
+			HeuristicMixedException, SystemException, RollbackException, HeuristicCommitException;
 
 	/**
 	 * Called to tell the transaction to forget any heuristics.
